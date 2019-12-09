@@ -1,0 +1,11 @@
+module mandelbrot(x, y, colour);
+    input x, y;
+    output [2:0] colour;
+
+
+
+endmodule
+
+module iterate();
+
+endmodule

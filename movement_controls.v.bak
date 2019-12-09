@@ -1,0 +1,8 @@
+
+module zoom_control();
+
+endmodule
+
+module pan_control();
+
+endmodule

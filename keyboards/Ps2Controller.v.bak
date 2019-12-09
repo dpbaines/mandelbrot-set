@@ -1,0 +1,16 @@
+module PS2_Data_In (
+	// Inputs
+	input clk,
+	input reset,
+
+	input incoming_data,
+	input receiving_data,
+
+	input ps2_clk_posedge,
+	input ps2_clk_negedge,
+	input ps2_data,
+
+	// Outputs
+	output reg[7:0] recieved data;
+	
+);

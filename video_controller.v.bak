@@ -1,0 +1,14 @@
+module vga_adapter(
+			resetn,
+			clock,
+			colour,
+			x, y, plot,
+			/* Signals for the DAC to drive the monitor. */
+			VGA_R,
+			VGA_G,
+			VGA_B,
+			VGA_HS,
+			VGA_VS,
+			VGA_BLANK,
+			VGA_SYNC,
+			VGA_CLK);

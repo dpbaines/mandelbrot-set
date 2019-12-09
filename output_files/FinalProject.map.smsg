@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at mandelbrot.v(17): object "go" differs only in case from object "GO" in the same scope File: C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/mandelbrot.v Line: 17
+Warning (10268): Verilog HDL information at MandelBrotDisplay.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/keyboards/MandelBrotDisplay.v Line: 47

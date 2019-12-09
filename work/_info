@@ -1,0 +1,210 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject
+vcolour_lut
+Z1 !s110 1574748565
+!i10b 1
+!s100 ljzdmdec6fA>^NPCOKMLc1
+IGBXfGFg=DKz4YT0Y:m9e`0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1574748483
+Z4 8output_files/get_colour.v
+Z5 Foutput_files/get_colour.v
+L0 37
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1574748565.000000
+Z8 !s107 output_files/get_colour.v|mandelbrot.v|
+Z9 !s90 -reportprogress|300|mandelbrot.v|output_files/get_colour.v|
+!i113 1
+Z10 tCvgOpt 0
+vget_colour
+R1
+!i10b 1
+!s100 XFo9EkYUSCOe4PC^g?R_T3
+IPOC=c@1@10Edoc`258de00
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+viterate
+!s110 1573689347
+!i10b 1
+!s100 DPB0G_`@8iZ:VgBECYjb@1
+IiZP34_[SN]Fb@UP350P?f1
+R2
+R0
+w1573689337
+Z11 8mandelbrot.v
+Z12 Fmandelbrot.v
+L0 70
+R6
+r1
+!s85 0
+31
+!s108 1573689346.000000
+Z13 !s107 mandelbrot.v|
+Z14 !s90 -reportprogress|300|mandelbrot.v|
+!i113 1
+R10
+viterator
+!s110 1574202012
+!i10b 1
+!s100 J3Jio2jJ8BeU6X9R?dg133
+IJ`Lf8OcB@@[[4a@G`iH6e1
+R2
+R0
+w1574201754
+8iterator.v
+Fiterator.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1574202012.000000
+!s107 iterator.v|
+!s90 -reportprogress|300|iterator.v|
+!i113 1
+R10
+vmain
+!s110 1574202056
+!i10b 1
+!s100 OoXBX0eYz<RfIWWhQa[_53
+IPlVgV8RSQJblSPn9mANOT1
+R2
+R0
+w1574202008
+8main.v
+Fmain.v
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1574202056.000000
+!s107 main.v|
+!s90 -reportprogress|300|main.v|
+!i113 1
+R10
+vmandelbrot
+R1
+!i10b 1
+!s100 e_V:Na<CaIOQ36_6lhX@T2
+I>oPROWo>Tno4=9@D8:bjP3
+R2
+R0
+Z15 w1574744110
+R11
+R12
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmultiply
+!s110 1573790221
+!i10b 1
+!s100 =:GILgET;;bn]6bA5JhbU0
+I7i]QD7JfJ>@ljfMaZ@1be1
+R2
+R0
+w1573789727
+R11
+R12
+L0 116
+R6
+r1
+!s85 0
+31
+!s108 1573790220.000000
+R13
+R14
+!i113 1
+R10
+vmultiply1
+R1
+!i10b 1
+!s100 cWE1i7f:7Cz[3Q2eWAkLY1
+I7d4AJcL[4B@C[eE6;eSQm0
+R2
+R0
+R15
+R11
+R12
+L0 119
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpan_control
+Z16 !s110 1574397864
+!i10b 1
+!s100 Yk[O7IN2Nhno@ZL7KVXKj1
+I06nhcEESg=PWZ;=Ie`8HQ2
+R2
+R0
+Z17 w1574397863
+Z18 8output_files/movement_controls.v
+Z19 Foutput_files/movement_controls.v
+L0 11
+R6
+r1
+!s85 0
+31
+Z20 !s108 1574397864.000000
+Z21 !s107 output_files/movement_controls.v|
+Z22 !s90 -reportprogress|300|output_files/movement_controls.v|
+!i113 1
+R10
+vzoom_control
+R16
+!i10b 1
+!s100 7DcbRhKf_LB[U11PPc_=e0
+If8D<0l7h8Xe8mm]B]VGQH1
+R2
+R0
+R17
+R18
+R19
+L0 2
+R6
+r1
+!s85 0
+31
+R20
+R21
+R22
+!i113 1
+R10

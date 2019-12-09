@@ -1,0 +1,10 @@
+
+
+C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/vga_adapter/vga_pll.v
+
+Nov 19 11PM:43:48>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)

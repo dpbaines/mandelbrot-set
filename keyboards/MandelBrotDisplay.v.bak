@@ -1,0 +1,72 @@
+module keyboard_in
+	(
+		clock,						//	On Board 50 MHz
+		ps2_clk,
+		ps2_dat,
+		out
+	);
+
+	input			clock;				//	50 MHz
+	output [9:0] out;
+	// Declare your inputs and outputs here
+	// Do not change the following outputs
+	
+	inout ps2_clk, ps2_dat;
+	
+	wire resetn, to_count;
+	assign resetn = 1'b1;
+	//writeEn wires that are inputs to the controller.
+	wire writeEn;
+	
+	wire send_command, command_was_sent, error_communication_timed_out, received_data_en;
+	wire [7:0] the_command, received_data;
+	reg [7:0] last_received_data, last02_received_data,last03_received_data ;
+
+	reg w, a, s, d, r, f;
+	
+	assign out[5:0] = {w, a, s, d, r, f};
+
+
+	Ps2Controller ps2 (
+		.CLOCK_50(clock),
+		.reset(~resetn),
+		.the_command(the_command),
+		.send_command(send_command),
+		.PS2_CLK(ps2_clk),					
+		.PS2_DAT(ps2_dat),
+		.command_was_sent(command_was_sent),
+		.error_communication_timed_out(error_communication_timed_out),
+		.received_data(received_data),
+		.received_data_en(received_data_en)
+	);
+	
+	reg wup, aup, sup, dup;
+	
+	
+	always @ (posedge clock) begin
+		last03_received_data <= received_data_en ? last02_received_data : last03_received_data;
+		last02_received_data <= received_data_en ? last_received_data : last02_received_data;
+		last_received_data <= received_data_en ? received_data : last_received_data;
+		
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h1C) && a) a = 1'b0;
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h1D) && w) w = 1'b0;
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h1B) && s) s = 1'b0;
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h23) && d) d = 1'b0;
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h2D) && r) r = 1'b0;
+		if ((last02_received_data == 8'hF0) && (last_received_data == 8'h2B) && f) f = 1'b0;
+		
+		if ((last_received_data == 8'h1C) && (last02_received_data != 8'hF0)) a = 1'b1;
+		if ((last_received_data == 8'h1D) && (last02_received_data != 8'hF0)) w = 1'b1;
+		if ((last_received_data == 8'h1B) && (last02_received_data != 8'hF0)) s = 1'b1;
+		if ((last_received_data == 8'h23) && (last02_received_data != 8'hF0)) d = 1'b1;
+		if ((last_received_data == 8'h2D) && (last02_received_data != 8'hF0)) r = 1'b1;
+		if ((last_received_data == 8'h2B) && (last02_received_data != 8'hF0)) f = 1'b1;
+		
+	end 
+	
+endmodule
+
+
+
+
+

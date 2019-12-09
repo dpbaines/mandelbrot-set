@@ -1,0 +1,19 @@
+
+
+C:/intelFPGA_lite/18.1/Lab7Part2/vga_adapter/vga_pll.v
+
+Nov 04 06PM:52:48>: Error in CNX file format.
+
+Error messages are listed in file
+C:/intelFPGA_lite/18.1/Lab7Part2/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/vga_adapter/vga_pll.v
+
+Nov 18 12AM:57:19>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/David Baines/OneDrive/Uni/Fall 2019/ECE241/FinalProject/vga_adapter/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
